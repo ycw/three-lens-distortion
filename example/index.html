@@ -95,7 +95,7 @@
     pane.addInput(params, 'principalPoint');
     pane.addInput(params, 'focalLength');
     pane.addInput(params, 'skew', { min: -Math.PI / 2, max: Math.PI / 2 });
-    pane.on('change', () => lensDistortionPass.skew = params.skew );
+    pane.on('change', () => lensDistortionPass.skew = params.skew);
 
     // ----- render loop
 
