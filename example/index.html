@@ -91,9 +91,18 @@
     // ---- gui
 
     const pane = new Pane({ title: 'Lens Distortion', container: document.querySelector('#pane') });
-    pane.addInput(params, 'distortion');
-    pane.addInput(params, 'principalPoint');
-    pane.addInput(params, 'focalLength');
+    pane.addInput(params, 'distortion', {
+      x: { min: -1, max: 1 },
+      y: { min: -1, max: 1 },
+    });
+    pane.addInput(params, 'principalPoint', {
+      x: { min: -.5, max: .5 },
+      y: { min: -.5, max: .5 }
+    });
+    pane.addInput(params, 'focalLength', {
+      x: { min: -1., max: 1. },
+      y: { min: -1., max: 1. }
+    });
     pane.addInput(params, 'skew', { min: -Math.PI / 2, max: Math.PI / 2 });
     pane.on('change', () => lensDistortionPass.skew = params.skew);
 
