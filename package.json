@@ -1,0 +1,14 @@
+{
+  "name": "three-lens-distortion",
+  "version": "1.0.0",
+  "author": "ycw (https://github.com/ycw)",
+  "repository": "github:ycw/three-lens-distortion",
+  "main": "src/index.js",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "threejs",
+    "postprocessing",
+    "shader"
+  ]
+}
