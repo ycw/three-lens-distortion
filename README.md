@@ -24,7 +24,11 @@ via npm
 
 ```js
 import * as THREE from 'three'
-import { EffectComposer, Pass, FullScreenQuad } from 'three/examples/jsm/postprocessing/EffectComposer'
+///
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
+import { Pass, FullScreenQuad } from "three/examples/jsm/postprocessing/Pass";
+/// For Three.js r147 and below, use the following line
+/// import { EffectComposer, Pass, FullScreenQuad } from 'three/examples/jsm/postprocessing/EffectComposer'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
 import { LensDistortionPassGen } from 'three-lens-distortion'
 
